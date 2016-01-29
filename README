@@ -1,0 +1,18 @@
+Pollard's p-1 factorization algorithm has been implemented in Serial, CUDA and MPI.
+finalrsa.c  :  Requires user to input two b-smooth prime numbers ( see Table 1 in "Parallel RSA Decrytion Algorithm" for the input data). Set bound = 50000. This is the serial implementation of the algorithm.
+
+pollardCuda.c : Requires user to input two b-smooth prime number ( see Table 1 in "Parallel RSA Decrytion Algorithm" for the input data). Set bound = 50000. This is the CUDA implementation of the algorithm.  
+
+pollardMpi.c : input data needs to explicitly defined as macros. ( see Table 1 in "Parallel RSA Decrytion Algorithm" for the input data). Set bound = 50000. This is the MPI implementation of the algorithm.  
+
+Execution instructions :
+
+To compile:
+make clean
+make
+
+To execute:
+Serial - ./finalrsa.out
+CUDA - ./pollardCuda.out
+MPI - ./pollardMpi.out
+
